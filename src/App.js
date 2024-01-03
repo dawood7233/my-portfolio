@@ -9,33 +9,33 @@ import Contact from "./pages/contact";
 import Particles from "react-tsparticles";
 import particles from "./utils.js/particles";
 // import { loadFull } from "tsparticles";
-import { loadSlim } from "tsparticles-slim"; 
+import { loadSlim } from "tsparticles-slim";
 
 function App() {
-  const location= useLocation();
+  const location = useLocation();
   console.log(location);
 
   const handleInit = async (main) => {
     await loadSlim(main);
   };
-  const renderParticleOnlyInHome=location.pathname ==="/";
+  const renderParticleOnlyInHome = location.pathname === "/";
   return (
-    <div>
-      {
-        renderParticleOnlyInHome &&
+    <div className="App">
+      {renderParticleOnlyInHome && (
         <Particles id="particles" options={particles} init={handleInit} />
-      }
-      
-      <Navbar />
+      )}
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Navbar />
+      <div className="App__main-page-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </div>
   );
 }

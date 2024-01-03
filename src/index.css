@@ -1,27 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
 
-
-:root{
-    --yellow-theme-background-color : #000000;
-    --yellow-theme-main-color : #0bab4b;
-    --yellow-theme-sub-text-color : #ffffff;
-    --yellow-theme-nav-background-color : #181818;
+:root {
+  --green-theme-background-color: #000000;
+  --green-theme-main-color: #0bab4b;
+  --green-theme-sub-text-color: #ffffff;
+  --green-theme-nav-background-color: #181818;
 }
-*{
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
 }
-html{
-    font-size: 62.5%;
-    height: 100%;
+html {
+  font-size: 62.5%;
+  height: 100%;
 }
-body{
-    background: var(--yellow-theme-background-color);
-    height: 100%;
-
+body {
+  background: var(--green-theme-background-color);
+  height: 100%;
 }
-#root{
-    height: 100%;
+#root {
+  height: 100%;
 }
