@@ -13,7 +13,6 @@ import { loadSlim } from "tsparticles-slim";
 
 function App() {
   const location = useLocation();
-  console.log(location);
 
   const handleInit = async (main) => {
     await loadSlim(main);

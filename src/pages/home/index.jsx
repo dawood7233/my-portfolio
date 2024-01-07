@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
+// import portrait from "../../images/albert-dera-ILip77SbmOE-unsplash.jpg"
 import "./style.scss";
 
 const Home = () => {
@@ -14,7 +15,8 @@ const Home = () => {
           Front-end developer
         </h1>
       </div>
-      <Animate play duration={1.5}>
+      <Animate play 
+      duration={1.5}
         delay={1}
         start=
         {{
@@ -22,8 +24,8 @@ const Home = () => {
         }}
         end=
         {{
-          transfrom: "translateY(0px)",
-        }}
+          transfrom: "translateX(0px)",
+        }}>
         <div className="home__contact-me">
           <button onClick={() => navigate("/resume")}>Hire me</button>
         </div>
