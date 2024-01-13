@@ -1,7 +1,7 @@
 export default {
     background: {
       color: {
-        value: "#1d1d1d",
+        value: "#181818",
       },
     },
     fpsLimit: 120,
@@ -19,7 +19,7 @@ export default {
       },
       modes: {
         push: {
-          quantity: 4,
+          quantity: 30,
         },
         repulse: {
           distance: 200,

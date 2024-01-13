@@ -1,4 +1,4 @@
-export const skillsData=[
+export const skillsData =[
     {label:"FRONT END",
     data:[
         {
@@ -12,6 +12,10 @@ export const skillsData=[
         {
             skillName: "JAVASCRIPT",
             percentage: "60"
+        },
+        {
+            skillName: "REACT",
+            percentage: "80"
         },
     ],
 },

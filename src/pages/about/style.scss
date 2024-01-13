@@ -63,10 +63,10 @@
     }
   }
 }
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .about__content {
     flex-direction: column;
-  
+
     &__personalData,
     &__image-container {
       width: 100%;

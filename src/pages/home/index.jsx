@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
-// import portrait from "../../images/albert-dera-ILip77SbmOE-unsplash.jpg"
 import "./style.scss";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
+    <>
     <section id="home" className="home">
       <div className="home__container">
         <h1>
@@ -20,7 +20,7 @@ const Home = () => {
         delay={1}
         start=
         {{
-          transform: "translateY(550px)",
+          transform: "translateY(150px)",
         }}
         end=
         {{
@@ -31,7 +31,9 @@ const Home = () => {
         </div>
       </Animate>
     </section>
+    </>
   );
 };
+
 
 export default Home;
