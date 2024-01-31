@@ -1,0 +1,85 @@
+.resume{
+    height: 100%;
+}
+.timeline{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    &__experience, &__education{
+        width: 50%;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__text{
+            text-transform: uppercase;
+                color: var(--green-theme-sub-text-color);
+                padding-bottom: 3px;
+                font-weight: 700;
+                line-height: 1rem;
+                border-bottom: 2px solid var(--green-theme-main-color);
+                position: relative;
+                display: inline-block;
+                font-size: 22px;
+                letter-spacing: 0.5px;
+        }
+        &__text::before, &__text::after{
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 5px;
+            background-color: var(--green-theme-main-color);
+            bottom: -1px;
+        }
+        &__text::before{
+            left: 0;
+        }
+        &__text::after{
+            right: 0;
+        }
+        &__vertical-timeline-element{
+            padding: 0px 0px 30px 0px;
+            &:last-child{
+                padding-bottom: 0px;
+
+            }
+        }
+        .vertical-timeline-element-title-wrapper{
+            display: flex;
+            align-items: center;
+
+            h3,h4{
+                font-size: 16px;
+            }
+            h4{
+                margin-left: 8px;
+                padding-left: 230px;
+            }
+            
+        }
+        .vertical-timeline-element-title-wrapper-description{
+            font-size: 18px;
+        }
+        .vertical-timeline-element-content{
+            box-shadow: none;
+        }
+        .vertical-timeline-element-content-arrow{
+            display: none;
+        }
+        .vertical-timeline-element-date{
+            opacity: 1;
+            color: var(--green-theme-main-color);
+            font-size: 18px;
+        }
+    }
+
+}
+@media only screen and (max-width : 768px){
+    .timeline{
+        flex-direction: column;
+        &__experience, &__education{
+            width: 100%;
+            gap: 2rem;
+        }
+    }
+}

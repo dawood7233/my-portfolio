@@ -2,14 +2,14 @@
   &__image-container {
     display: flex;
     margin-left: 700px;
-    margin-top: -520px;
+    margin-top: -510px;
 
     border: 2px;
     &__image {
       height: 400px;
       width: 500px;
       display: block;
-      border-radius: 50%;
+      border-radius: 40% ;
     }
   }
   &__content {
