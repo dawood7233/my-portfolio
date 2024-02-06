@@ -28,6 +28,9 @@ const Home = () => {
         }}>
         <div className="home__contact-me">
           <button onClick={() => navigate("/resume")}>Hire me</button>
+          <a href="/Muhammad Dawood(updated).pdf" download="Resume">
+            <button>Download Resume</button>
+          </a>
         </div>
       </Animate>
     </section>
