@@ -17,9 +17,12 @@ function App() {
   const handleInit = async (main) => {
     await loadSlim(main);
   };
+  
   const renderParticleOnlyInHome = location.pathname === "/";
+
   return (
     <div className="App">
+      {/* Render particles only on the home page */}
       {renderParticleOnlyInHome && (
         <Particles id="particles" options={particles} init={handleInit} />
       )}
@@ -27,7 +30,18 @@ function App() {
       <Navbar />
       <div className="App__main-page-content">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route 
+            path="/" 
+            element={
+              <>
+                <Home />
+                <Skills />
+                <Resume />
+                <Portfolio />
+                <Contact />
+              </>
+            } 
+          />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/resume" element={<Resume />} />
@@ -38,4 +52,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
